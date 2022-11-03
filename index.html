@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="contas.js"></script>
+</head>
+
+<body>
+    <!--Dividir a calculadora na parte das contas e das teclas-->
+    <div class="calculadora">
+        <div class="calculadora_contas">0</div>
+        <div class="calculadora_teclas">
+            <button class="key--operator" onclick​="inserir('+')">+</button>
+            <button class="key--operator" onclick​="inserir('-')">-</button>
+            <button class="key--operator" onclick​="inserir('/')">÷</button>
+            <button class="key--operator" value="*" onclick​="inserir('*')">x</button>
+            <button onclick​="inserir('7')">7</button>
+            <button onclick​="inserir('8')">8</button>
+            <button onclick​="inserir('9')">9</button>
+            <button onclick​="inserir('4')">4</button>
+            <button onclick​="inserir('5')">5</button>
+            <button onclick​="inserir('6')">6</button>
+            <button onclick​="inserir('1')">1</button>
+            <button onclick​="inserir('2')">2</button>  
+            <button onclick​="inserir('3')">3</button>
+            <button onclick​="inserir('0')">0</button>
+            <button data action="decimal">.</button>
+            <button data-action="apagar">AC</button>
+            <button class="key--equal" data-action="calculate">=</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+</body>
+
+</html>
